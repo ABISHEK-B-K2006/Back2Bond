@@ -1,7 +1,7 @@
 services:
   - type: web
     name: my-app
-    env: node # or python, ruby, etc.
-    buildCommand: npm install
+    env: node
+    buildCommand: npm install && npm run build
     startCommand: npm start
-    plan: free # or starter, pro
+    plan: free
